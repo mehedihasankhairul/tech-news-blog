@@ -1,10 +1,18 @@
 import React from "react";
+import { useGlobalContext } from "../context";
 
 const Pagination = () => {
+  const { page, nbPages, getPrevPage, getNextPage } = useGlobalContext();
   return (
-    <div>
-      <h1>Pagination</h1>
-    </div>
+    <>
+      <div className="pagination-btn">
+        <button onClick={() => getPrevPage()}>Prev</button>
+        <p>
+          {page + 1} of {nbPages}
+        </p>
+        <button onClick={() => getNextPage()}>Next</button>
+      </div>
+    </>
   );
 };
 

@@ -4,5 +4,7 @@
   **React, react-router-dom**
 ### Features
   **Search, Pagination, API , Context API**
+  *Api from  https://hn.algolia.com/api*
 
-## Development Mode
+## Development Mode = off
+
